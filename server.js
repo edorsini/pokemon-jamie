@@ -5,7 +5,7 @@ const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
 let keys;
-const cookieSession = require('cookie-session');
+// const cookieSession = require('cookie-session');
 // const passport = require('passport');
 // const passportSetup = require('./config/passport-setup');
 
