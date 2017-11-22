@@ -1,3 +1,6 @@
+/*
+
+ 
 const router = require('express').Router();
 const passport = require('passport');
 const heroku = true;
@@ -41,3 +44,4 @@ router.get('/google/redirect', passport.authenticate('google'), function (req, r
 // });
 
 module.exports = router;
+*/
