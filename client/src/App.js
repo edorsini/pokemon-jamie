@@ -10,6 +10,7 @@ const App = () =>
 	<Router>
     <div>
       <Route exact path="/" component={Pokedex} />
+      <Route exact path="/pokedex" component={Pokedex} />
       <Route exact path="/home" component={Home} />
       <Route exact path="/profile" component={Profile} />      
       <Route exact path="/pokedex" component={Pokedex} />
