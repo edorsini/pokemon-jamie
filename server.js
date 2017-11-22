@@ -17,21 +17,21 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static("client/build"));
 // encrypt cookie
-let cook;
-let heroku = true;
-if(heroku){
-  cook=process.env.COOKIE_KEY;
-}else{
-  keys = require('./config/keys');
-  cook=keys.session.cookieKey;
-}
-app.use(cookieSession({
-  // cookie expires after a day
-  name:'user',
-  maxAge:24*60*60*1000,
-  keys: [cook],
-  httpOnly:false
-}))
+// let cook;
+// let heroku = true;
+// if(heroku){
+//   cook=process.env.COOKIE_KEY;
+// }else{
+//   keys = require('./config/keys');
+//   cook=keys.session.cookieKey;
+// }
+// app.use(cookieSession({
+//   // cookie expires after a day
+//   name:'user',
+//   maxAge:24*60*60*1000,
+//   keys: [cook],
+//   httpOnly:false
+// }))
 
 // initialize passport
 // app.use(passport.initialize());
