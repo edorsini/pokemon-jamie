@@ -16,7 +16,8 @@ const App = () =>
       <Route exact path="/profile" component={Pokedex} />      
       <Route exact path="/pokedex" component={Pokedex} />
       <Route exact path="/game" component={Pokedex} />  
-      <Route exact path="/vault" component={Pokedex} />      
+      <Route exact path="/vault" component={Pokedex} /> 
+      <Route component={Pokedex} />   
     </Switch>
 
     </div>
