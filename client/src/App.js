@@ -1,11 +1,27 @@
+/**
+ * Description:
+ * This is your main entry point to the React App (front-end app)
+ *
+ * Remember that for most purposes, it the App.js file and the components
+ * that it brings in is what you'd need to focus on when developing your application.
+ * Also, remember that the `utils` directory contains the Axios setup to make HTTP
+ * requests.
+ */
+
+// Bring in the React objects
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+// Bring in your custom components.. Notice how some components are
+// organized within `pages` and other components are organized within
+// `components`.  It is up to you to determine what organization makes 
+// sense.
+import Books from "./pages/Books";
+import Courses from "./pages/Courses";
+import Detail from "./pages/Detail";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/Nav";
 import Pokedex from "./pages/Pokedex";
-// import Home from "./pages/Home";
-// import Game from "./pages/Game";
-// import Profile from "./pages/Profile";
-// import Vault from "./pages/Vault";
 
 const App = () =>
   <Router>
@@ -22,9 +38,14 @@ const App = () =>
         <Route exact path="/" component={Pokedex} />
         <Route exact path="/home" component={Pokedex} />
         <Route exact path="/pokedex" component={Pokedex} />
+        <Route exact path="/books" component={Books} />
+        <Route exact path="/games" component={Books} />
+        <Route exact path="/courses" component={Courses} />
+        <Route exact path="/books/:id" component={Detail} />
         {
           // If no match, render the NoMatch component
         }
+        <Route component={NoMatch} />
       </Switch>
 
     </div>

@@ -55,9 +55,9 @@ class Pokedex extends Component {
     return (
       <div className = "container">
         <div className="panel-heading">
-					<h3 className="panel-title">Pokedex</h3>
+          <h3 className="panel-title">Pokedex</h3>
           <Login />
-				</div>
+        </div>
         <div className = "panel-body">
           <List>
             {this.state.pokemon.map((pokemon, i) => {
