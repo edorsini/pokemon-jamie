@@ -4,8 +4,8 @@ const pokedexRoutes = require("./pokedex");
 // const profileRoutes = require("./profile-routes");
 
 router.use("/pokedex", pokedexRoutes);
-router.use("/auth", authRoutes);
-router.use("/profile", profileRoutes);
+// router.use("/auth", authRoutes);
+// router.use("/profile", profileRoutes);
 
 
 module.exports = router;
