@@ -1,11 +1,11 @@
 const router = require("express").Router();
+const courseRoutes = require("./courses");
+const bookRoutes = require("./books");
 const pokedexRoutes = require("./pokedex");
-// const authRoutes = require("./auth-routes");
-// const profileRoutes = require("./profile-routes");
 
+// define the routes to use
+router.use("/courses", courseRoutes);
+router.use("/books", bookRoutes);
 router.use("/pokedex", pokedexRoutes);
-// router.use("/auth", authRoutes);
-// router.use("/profile", profileRoutes);
-
 
 module.exports = router;
