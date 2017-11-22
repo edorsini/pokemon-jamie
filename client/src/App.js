@@ -9,6 +9,7 @@ import Pokedex from "./pages/Pokedex";
 const App = () =>
 	<Router>
     <div>
+    <Switch>
       <Route exact path="/" component={Pokedex} />
       <Route exact path="/pokedex" component={Pokedex} />
       <Route exact path="/home" component={Pokedex} />
@@ -16,7 +17,8 @@ const App = () =>
       <Route exact path="/pokedex" component={Pokedex} />
       <Route exact path="/game" component={Pokedex} />  
       <Route exact path="/vault" component={Pokedex} />      
-          
+    </Switch>
+
     </div>
   </Router>;
 
