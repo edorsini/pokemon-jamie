@@ -4,8 +4,7 @@ const bookRoutes = require("./books");
 const pokedexRoutes = require("./pokedex");
 
 // define the routes to use
-router.use("/courses", courseRoutes);
-router.use("/books", bookRoutes);
+
 router.use("/pokedex", pokedexRoutes);
 
 module.exports = router;
